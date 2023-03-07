@@ -5,7 +5,13 @@ export const JobFilterContext = createContext();
 export function JobFilterProvider({ children }) {
   const [keywords, setKeywords] = useState([]);
 
+  function keywordIsFiltered(keyword) {
+    return keywords.find((kw) => kw === keyword);
+  }
+
   function addKeyword(keyword) {
+    if (keywordIsFiltered(keyword)) return;
+
     const newKeywords = [...keywords, keyword];
     setKeywords(newKeywords);
   }
