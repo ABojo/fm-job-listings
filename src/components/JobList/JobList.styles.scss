@@ -4,8 +4,9 @@
   padding: 5rem 0;
 
   &__cards {
-    height: 10rem;
     max-width: 70rem;
     margin: 0 auto;
+    display: grid;
+    grid-gap: 1rem;
   }
 }
