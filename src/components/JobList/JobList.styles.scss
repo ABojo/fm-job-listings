@@ -1,0 +1,11 @@
+.job-list {
+  background-color: hsl(180, 52%, 96%);
+  min-height: 100vh;
+  padding: 5rem 0;
+
+  &__cards {
+    height: 10rem;
+    max-width: 70rem;
+    margin: 0 auto;
+  }
+}
