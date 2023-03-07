@@ -1,0 +1,22 @@
+.job-badge {
+  padding: 0rem 0.6rem;
+  border-radius: 1rem;
+  font-size: 0.8rem;
+  color: white;
+  text-transform: uppercase;
+  display: inline-flex;
+  align-items: center;
+  height: 1.5rem;
+
+  &--new {
+    background-color: hsl(180, 29%, 50%);
+  }
+
+  &--featured {
+    background-color: hsl(180, 14%, 20%);
+  }
+
+  &:not(:last-child) {
+    margin-right: 0.5rem;
+  }
+}
