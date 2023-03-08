@@ -28,7 +28,12 @@ export function JobFilterProvider({ children }) {
     setKeywords([]);
   }
 
-  const value = { keywords, addKeyword, removeKeyword, clearKeywords };
+  const value = {
+    filteredKeywords: keywords,
+    addKeyword,
+    removeKeyword,
+    clearKeywords,
+  };
 
   return (
     <JobFilterContext.Provider value={value}>
