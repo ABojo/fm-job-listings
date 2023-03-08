@@ -1,18 +1,11 @@
 .filter-control {
-  background-color: white;
   padding: 1rem 2rem;
-  border-radius: 0.4rem;
   position: absolute;
   top: 7.5rem;
   left: 50%;
-  width: 90%;
-  max-width: 70rem;
   transform: translateX(-50%);
   display: flex;
   justify-content: space-between;
-  box-shadow: 10px 10px 19px -18px rgba(0, 0, 0, 0.75);
-  -webkit-box-shadow: 10px 10px 19px -18px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 10px 10px 19px -18px rgba(0, 0, 0, 0.75);
 
   &__keywords {
     display: flex;

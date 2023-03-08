@@ -1,6 +1,7 @@
 import "./JobCard.styles.scss";
 import JobKeyword from "../JobKeyword/JobKeyword";
 import JobBadge from "../JobBadge/JobBadge";
+import Container from "../Container/Container";
 
 function JobCard({ job }) {
   const {
@@ -23,7 +24,7 @@ function JobCard({ job }) {
   let cardClass = `job-card ${job.new && "job-card--new"}`;
 
   return (
-    <div className={cardClass}>
+    <Container classes={cardClass}>
       <img src={logoUrl} className="job-card__img" />
       <div className="job-card__head">
         <span className="job-card__company">{company}</span>
@@ -43,7 +44,7 @@ function JobCard({ job }) {
           return <JobKeyword key={keyword} keyword={keyword} />;
         })}
       </div>
-    </div>
+    </Container>
   );
 }
 
