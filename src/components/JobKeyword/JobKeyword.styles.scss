@@ -1,7 +1,9 @@
+@use "../../styles/variables" as *;
+
 .job-keyword {
-  background-color: hsl(180, 52%, 96%);
+  background-color: $color-keyword-bg;
   padding: 0.5rem;
-  color: hsl(180, 29%, 50%);
+  color: $color-dark-cyan;
   border: none;
   font-weight: 700;
   cursor: pointer;
@@ -9,7 +11,7 @@
   transition: all 0.2s;
 
   &:hover {
-    background-color: hsl(180, 29%, 50%);
-    color: white;
+    background-color: $color-dark-cyan;
+    color: $color-white;
   }
 }

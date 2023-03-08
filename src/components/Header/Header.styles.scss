@@ -1,4 +1,6 @@
+@use "../../styles/variables" as *;
+
 .header {
   height: 9.6rem;
-  background-color: hsl(180, 29%, 50%);
+  background-color: $color-dark-cyan;
 }

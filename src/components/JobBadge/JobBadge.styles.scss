@@ -1,19 +1,21 @@
+@use "../../styles/variables" as *;
+
 .job-badge {
   padding: 0rem 0.6rem;
   border-radius: 1rem;
   font-size: 0.8rem;
-  color: white;
+  color: $color-white;
   text-transform: uppercase;
   display: inline-flex;
   align-items: center;
   height: 1.5rem;
 
   &--new {
-    background-color: hsl(180, 29%, 50%);
+    background-color: $color-dark-cyan;
   }
 
   &--featured {
-    background-color: hsl(180, 14%, 20%);
+    background-color: $color-grey-cyan-2;
   }
 
   &:not(:last-child) {

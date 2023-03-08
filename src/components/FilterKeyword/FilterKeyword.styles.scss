@@ -1,3 +1,5 @@
+@use "../../styles/variables" as *;
+
 .filter-keyword {
   display: flex;
   &__text,
@@ -8,8 +10,8 @@
 
   &__text {
     color: hsl(180, 29%, 50%);
-    background-color: hsl(180, 52%, 96%);
-    font-weight: 700;
+    background-color: $color-keyword-bg;
+    font-weight: $fw-thick;
     display: block;
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
@@ -20,14 +22,14 @@
     cursor: pointer;
     transition: all 0.2s;
     border: none;
-    background-color: hsl(180, 29%, 50%);
+    background-color: $color-dark-cyan;
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
     display: flex;
     align-items: center;
 
     &:hover {
-      background-color: hsl(180, 14%, 20%);
+      background-color: $color-grey-cyan-2;
     }
   }
 }

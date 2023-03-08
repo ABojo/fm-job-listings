@@ -1,5 +1,7 @@
+@use "../../styles/variables" as *;
+
 .job-list {
-  background-color: hsl(180, 52%, 96%);
+  background-color: $color-bg;
   min-height: 100vh;
   padding: 5rem 0;
 
