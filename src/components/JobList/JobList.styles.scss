@@ -1,4 +1,5 @@
 @use "../../styles/variables" as *;
+@use "../../styles/breakpoints" as *;
 
 .job-list {
   background-color: $color-bg;
@@ -8,5 +9,9 @@
   &__cards {
     display: grid;
     grid-gap: 1rem;
+
+    @include respond-to("lg") {
+      grid-gap: 3.5rem;
+    }
   }
 }
