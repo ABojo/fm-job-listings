@@ -1,0 +1,15 @@
+.job-keyword {
+  background-color: hsl(180, 52%, 96%);
+  padding: 0.5rem;
+  color: hsl(180, 29%, 50%);
+  border: none;
+  font-weight: 700;
+  cursor: pointer;
+  border-radius: 0.4rem;
+  transition: all 0.2s;
+
+  &:hover {
+    background-color: hsl(180, 29%, 50%);
+    color: white;
+  }
+}
