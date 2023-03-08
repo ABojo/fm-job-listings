@@ -31,7 +31,9 @@ function JobCard({ job }) {
         {job.new && <JobBadge type="new" />}
         {featured && <JobBadge type="featured" />}
       </div>
-      <h2 className="job-card__title">{position}</h2>
+      <a href="#" className="job-card__title">
+        {position}
+      </a>
       <div className="job-card__details">
         <span>{postedAt}</span>
         <span>&#183;</span>

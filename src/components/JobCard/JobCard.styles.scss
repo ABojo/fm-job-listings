@@ -30,11 +30,18 @@
   }
 
   &__title {
+    justify-self: start;
     grid-column: 2 / 3;
     grid-row: 2 / 3;
     font-size: 1.35rem;
     font-weight: 700;
     color: hsl(180, 14%, 20%);
+    transition: all 0.2s;
+    text-decoration: none;
+
+    &:hover {
+      color: hsl(180, 29%, 50%);
+    }
   }
 
   &__details {
