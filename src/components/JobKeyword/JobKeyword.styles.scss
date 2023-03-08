@@ -1,14 +1,12 @@
 @use "../../styles/variables" as *;
+@use "../../styles/mixins" as *;
 
 .job-keyword {
-  background-color: $color-keyword-bg;
-  padding: 0.5rem;
-  color: $color-dark-cyan;
   border: none;
-  font-weight: 700;
   cursor: pointer;
   border-radius: 0.4rem;
   transition: all 0.2s;
+  @include keyword-styling;
 
   &:hover {
     background-color: $color-dark-cyan;
