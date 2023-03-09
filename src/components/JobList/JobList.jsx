@@ -3,6 +3,7 @@ import api from "../../utils/api";
 import { useEffect, useState, useContext } from "react";
 import JobCard from "../JobCard/JobCard";
 import { JobFilterContext } from "../../contexts/JobFilter";
+import FilterControl from "../FilterControl/FilterControl";
 
 function JobList() {
   const [jobs, setJobs] = useState([]);
@@ -62,6 +63,7 @@ function JobList() {
   return (
     <div className="job-list">
       <div className="job-list__cards">
+        <FilterControl />
         {filteredJobs.length ? (
           filteredJobs.map((job) => <JobCard key={job.id} job={job} />)
         ) : (
