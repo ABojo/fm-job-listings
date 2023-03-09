@@ -25,7 +25,7 @@ function JobCard({ job }) {
 
   return (
     <Container classes={cardClass}>
-      <img src={logoUrl} className="job-card__img" />
+      <img src={logoUrl} className="job-card__img" alt={company} />
       <div className="job-card__head">
         <span className="job-card__company">{company}</span>
         {job.new && <JobBadge type="new" />}

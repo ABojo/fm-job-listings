@@ -3,4 +3,10 @@
 .header {
   height: 9.6rem;
   background-color: $color-dark-cyan;
+
+  & * {
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+  }
 }
